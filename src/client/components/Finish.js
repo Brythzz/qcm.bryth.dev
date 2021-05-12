@@ -7,7 +7,7 @@ export default {
     props: ['wrongAnswers', 'questionsCount'],
     render({ wrongAnswers, questionsCount }) {
         return (
-            <div>
+            <div className="container">
                 <h1>QCM : Les formulaires HTML</h1>
                 <h2>Vous avez obtenu :</h2>
                     <h1>{ `${questionsCount - wrongAnswers}/${questionsCount}` }</h1>
