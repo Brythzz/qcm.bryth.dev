@@ -23,9 +23,7 @@ const router = createRouter({
         { path: '/', component: Home },
         { path: '/quiz', component: Questions },
         { path: '/:pathMatch(.*)*', redirect: '/' }
-    ],
-    linkActiveClass: "active",
-    linkExactActiveClass: ""
+    ]
 });
 
 
