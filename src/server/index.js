@@ -46,6 +46,10 @@ app.post('/api/v1/answers', (req, res) => {
     res.send({ isValid, next });
 });
 
+app.get('/cours', (req, res) => {
+    res.sendFile(path.resolve('public', 'cours.pdf'));
+});
+
 app.get('*', (req, res) => {
     res.sendFile(path.resolve('public', 'index.html'));
 });
