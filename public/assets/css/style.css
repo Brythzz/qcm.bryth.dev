@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat.woff2') format('woff2'),
+         url('../fonts/montserrat.woff') format('woff'),
+         url('../fonts/montserrat.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 25px;
+
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(42px, 5vw, 62px);
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 1px;
+}
+
+img {
+    width: 520px;
+    margin-top: 60px;
+    max-width: 100%;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.button {
+    font-weight: 600;
+}
+
+.button, .answer {
+    display: inline-flex;
+    padding: 12px 26px;
+    margin: 16px;
+    margin-top: 10px;
+    border: 2px solid #000;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 0 #000;
+    cursor: pointer;
+    transition: transform .3s ease,
+                box-shadow .3s ease;
+}
+
+.button:hover, .answer:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 0 #000;
+}
+
+.answer {
+    height: 45px;
+    align-items: center;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+}
